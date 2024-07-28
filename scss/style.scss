@@ -33,7 +33,7 @@ body {
     color: #F9FAFB;
     &__container {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
     }
     &__icon-img {
         margin: 20px 40px 20px 0;
@@ -50,7 +50,7 @@ body {
         }
     }
     &__main-menu a:not(:first-child) {
-        margin-right: 502px;
+        margin-right: 640px;
     }
     &__main-menu a:not(:last-child) {
         margin-right: 24px;
@@ -59,7 +59,7 @@ body {
         font-weight: 500;
         display: flex;
         align-items: center;
-        margin: 0 40px;
+        margin: 0 20px;
         img {
             margin-right: 10px;
         }
@@ -69,7 +69,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 40px;
+        margin: 0 40px 0 20px;
     }
     &__card {
         font-weight: 500;
@@ -92,6 +92,63 @@ body {
 
 .bottom-nav {
     background-color: #F0BA4E;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        height: 48px;
+    }
+    &__catalog,
+    &__catalog-navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color:#3C3C3B;
+        font-weight: 600;
+        a {
+            color: inherit;
+            text-decoration: none;
+            margin: 0;
+        }
+    }
+    &__catalog-navigation a:not(:first-child) {
+        margin-right: 343px;
+    }
+    &__catalog-navigation a:not(:last-child) {
+        margin-right: 24px;
+    }
+    &__catalog-text {
+        margin-left: 10px;
+        margin-right: 24px;
+    }
+    &__product-search-location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__product-search-input {
+        color: #4B565E99;
+        font-size: 16px;
+        font-weight: 400;
+        background-color: #F0BA4E;
+        width: 100%;
+    }
+    &__product-search {
+        width: 400px;
+        border-bottom: 1px solid #3C3C3B;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 24px;
+    }
+    &__location {
+        display: flex;
+        justify-content: center;
+    }
+    &__location-place {
+        margin-left: 4px;
+        color: #FFFFFF;
+        font-weight: 500;
+
+    }
 }
 
 .main {
