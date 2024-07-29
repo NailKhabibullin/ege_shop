@@ -103,6 +103,7 @@ body {
 .header {
   position: sticky;
   top: 0px;
+  z-index: 10;
 }
 
 .top-nav {
@@ -117,6 +118,14 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.top-nav__left-part-main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 .top-nav__icon-img {
   margin: 20px 40px 20px 0;
@@ -138,11 +147,16 @@ body {
   font-weight: 600;
   margin: 0;
 }
-.top-nav__main-menu a:not(:first-child) {
-  margin-right: 640px;
-}
 .top-nav__main-menu a:not(:last-child) {
   margin-right: 24px;
+}
+.top-nav__right-part-main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 .top-nav__contact {
   font-weight: 500;
@@ -202,6 +216,14 @@ body {
           justify-content: space-between;
   height: 48px;
 }
+.bottom-nav__lefr-part-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
 .bottom-nav__catalog, .bottom-nav__catalog-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,15 +242,20 @@ body {
   text-decoration: none;
   margin: 0;
 }
-.bottom-nav__catalog-navigation a:not(:first-child) {
-  margin-right: 343px;
-}
 .bottom-nav__catalog-navigation a:not(:last-child) {
   margin-right: 24px;
 }
 .bottom-nav__catalog-text {
   margin-left: 10px;
   margin-right: 24px;
+}
+.bottom-nav__right-part-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
 .bottom-nav__product-search-location {
   display: -webkit-box;
@@ -279,8 +306,42 @@ body {
           flex-grow: 1;
   background-color: #FFFFFF;
 }
+.main__preview {
+  height: 720px;
+  background-image: url("../src/img/main-background.png");
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__preview::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  height: 100%;
+  background: rgba(75, 86, 94, 0.6);
+  pointer-events: none;
+  -webkit-clip-path: polygon(0 0, 0 100%, 69% 100%, 100% 0);
+          clip-path: polygon(0 0, 0 100%, 69% 100%, 100% 0);
+}
+.main__preview-title {
+  width: 100%;
+}
+.main__preview-title-text {
+  font-size: 40px;
+  font-weight: 700;
+  color: #F0BA4E;
+  position: relative;
+  z-index: 1;
+}
 
 .footer {
   background-color: #4B565E;
   text-align: center;
+  position: sticky;
 }

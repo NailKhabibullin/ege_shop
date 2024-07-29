@@ -25,6 +25,7 @@ body {
 .header {
     position: sticky;
     top: 0px;
+    z-index: 10;
 }
 
 .top-nav {
@@ -34,6 +35,10 @@ body {
     &__container {
         display: flex;
         justify-content: space-between;
+    }
+    &__left-part-main-menu {
+        display: flex;
+        justify-content: left;
     }
     &__icon-img {
         margin: 20px 40px 20px 0;
@@ -49,11 +54,15 @@ body {
             margin: 0;
         }
     }
-    &__main-menu a:not(:first-child) {
-        margin-right: 640px;
-    }
+    // &__main-menu a:not(:first-child) {
+    //     margin-right: 0px;
+    // }
     &__main-menu a:not(:last-child) {
         margin-right: 24px;
+    }
+    &__right-part-main-menu {
+        display: flex;
+        justify-content: right;
     }
     &__contact {
         font-weight: 500;
@@ -64,7 +73,6 @@ body {
             margin-right: 10px;
         }
     }
-
     &__favorites {
         display: flex;
         justify-content: center;
@@ -97,6 +105,10 @@ body {
         justify-content: space-between;
         height: 48px;
     }
+    &__lefr-part-menu {
+        display: flex;
+        justify-content: left;
+    }
     &__catalog,
     &__catalog-navigation {
         display: flex;
@@ -110,15 +122,16 @@ body {
             margin: 0;
         }
     }
-    &__catalog-navigation a:not(:first-child) {
-        margin-right: 343px;
-    }
     &__catalog-navigation a:not(:last-child) {
         margin-right: 24px;
     }
     &__catalog-text {
         margin-left: 10px;
         margin-right: 24px;
+    }
+    &__right-part-menu {
+        display: flex;
+        justify-content: right;
     }
     &__product-search-location {
         display: flex;
@@ -154,11 +167,42 @@ body {
 .main {
     flex-grow: 1;
     background-color: #FFFFFF;
+    &__preview {
+        height: 720px;
+        background-image: url('../src/img/main-background.png') ;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    &__preview::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 55%;
+        height: 100%;
+        background: rgba(75, 86, 94, 0.6);
+        pointer-events: none;
+        clip-path: polygon(0 0, 0 100%, calc(100% - 31%) 100%, 100% 0);
+    }
+    &__preview-title {
+        width: 100%;
+
+    }
+    &__preview-title-text {
+        font-size: 40px;
+        font-weight: 700;
+        color: #F0BA4E;
+        position: relative;
+        z-index: 1;
+    }
+
+    
 
 }
 
 .footer {
     background-color: #4B565E;
     text-align: center;
-    // position: sticky;
+    position: sticky;
 }
