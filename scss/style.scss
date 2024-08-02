@@ -577,6 +577,201 @@ body {
 
 .footer {
     background-color: #4B565E;
-    text-align: center;
     position: sticky;
+
+    &__top-content {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #566169;
+        margin-bottom: 34px;
+    }
+
+    &__top-content-left {
+        margin-top: 34px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex: 50%;
+        margin-bottom: 52px;
+    }
+
+    &__logo {
+        margin-bottom: 32px;
+    }
+
+    &__contacts {
+        display: flex;
+
+    }
+
+    &__phones {
+        display: flex;
+        flex-direction: column;
+        margin-right: 56px;
+    }
+
+    &__phones-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFFFFF99;
+    }
+
+    &__phone-icon{
+        margin-right: 12px;
+        img {
+            width: 24px;
+            height: 24px;
+            opacity: 0.6;
+        }
+    }
+
+    &__phone-numbers {
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFFFFF;
+        p {
+            margin-left: 70px;
+            padding-bottom: 8px;
+        }
+
+    }
+
+    &__emails {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__emails-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 400;
+        font-size: 12px;
+        color: #FFFFFF99;
+    }
+    &__email-icon {
+        margin-right: 12px;
+    }
+    &__email-adress {
+        font-size: 16px;
+        font-weight: 500;
+        color: #FFFFFF;
+        p {
+            margin-left: 50px;
+            padding-bottom: 8px;
+        }
+    }
+
+    &__top-content-right {
+        border-left: 1px solid #566169;
+        flex: 50%;
+        padding-top: 34px;
+        display: flex;
+        justify-content: center;
+    }
+    &__top-content-right-container {
+        width: 534px;
+    }
+
+    &__questions {
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+    }
+
+    &__question-descr {
+        margin-top: 12px;
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF99;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+
+    &__question-sending {
+        display: flex;
+        padding: 0px 6px 0px 24px;
+        border: 1px solid #F0BA4E;
+        border-radius: 30px;
+        height: 48px;
+        justify-content: space-between;
+        align-items: center;
+        input {
+            font-weight: 400;
+            font-size: 12px;
+            color: #FFFFFF99;
+            background-color: #4B565E;
+        }
+    }
+
+    &__input {
+        flex:content;
+        margin-left: 10px;
+    }
+
+    &__question-sending-btn {
+        margin-right: -2px;
+        button {
+            height: 38px;
+            padding: 0px 38px 0px 38px;
+            border: 1px solid #F0BA4E;
+            border-radius: 30px;
+            background-color:#F0BA4E ;
+            p {
+            
+                color: #FFFFFF;
+                font-size: 10px;
+                font-weight: 700;
+            }
+        }
+        
+    }
+
+    &__bottom {
+        margin-top: 34px;
+        margin-bottom: 34px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__bottom-left {
+        
+    }
+
+    &__navigation {
+        display: flex;
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #FFFFFF;
+            margin-right: 28px;
+        }
+        p:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__social-media {
+        display: flex;
+        margin-top: 36px;
+        div {
+            margin-right: 20px;
+        }
+    }
+
+    &__bottom-right {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF99;
+    }
+}
+.container {
 }
